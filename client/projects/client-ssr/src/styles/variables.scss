@@ -1,0 +1,89 @@
+// Colors
+$primary: #056bf1;
+$success: #4aa256;
+$warn: #c74244;
+$blue: #1f7af1;
+$light-gray: #fafafa;
+$gray: #f2f2f2;
+$medium-gray: #ececec;
+$dark-gray: #545454;
+$border-gray: #e6e6e6;
+$font-gray: #939393;
+
+// font-family-variable
+$font-thin: "Proxima Nova THIN";
+$font-light: "Proxima Nova LIGHT";
+$font-regular: "Proxima Nova REGULAR";
+$font-semibold: "Proxima Nova SEMIBOLD";
+$font-bold: "Proxima Nova BOLD";
+$font-extrabold: "Proxima Nova EXTRABOLD";
+
+//font-size-variable
+$font-size-xl: 20px;
+$font-size-lg: 18px;
+$font-size-base: 16px;
+$font-size-md: 14px;
+$font-size-sm: 12px;
+$font-size-xs: 10px;
+
+// Utility Classes
+
+.font-size {
+  font-size: $font-size-base !important  ;
+  &-xl {
+    font-size: $font-size-xl !important ;
+  }
+  &-lg {
+    font-size: $font-size-lg !important ;
+  }
+  &-base {
+    font-size: $font-size-base !important ;
+  }
+  &-md {
+    font-size: $font-size-md !important ;
+  }
+  &-sm {
+    font-size: $font-size-sm !important ;
+  }
+  &-xs {
+    font-size: $font-size-xs !important ;
+  }
+}
+
+.font {
+  font-family: $font-regular !important  ;
+  &-thin {
+    font-family: $font-thin !important ;
+  }
+  &-regular {
+    font-family: $font-regular !important ;
+  }
+  &-semibold {
+    font-family: $font-semibold !important ;
+  }
+  &-bold {
+    font-family: $font-bold !important ;
+  }
+  &-extrabold {
+    font-family: $font-extrabold !important ;
+  }
+}
+
+.primary {
+  color: $primary;
+}
+.success {
+  color: $success;
+}
+.warn {
+  color: $warn;
+}
+.bg-color {
+  background-color: $light-gray;
+}
+.blue {
+  color: $blue;
+}
+.font-gray {
+  color: $font-gray;
+}

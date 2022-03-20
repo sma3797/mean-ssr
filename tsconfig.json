@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "dist/server",
+    "baseUrl": ".",
+    "typeRoots": [
+      "custom.d.ts",
+      "node_modules/@types"
+    ],
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "./node_modules/*",
+    "./client/*",
+    "./server/angular-server.ts"
+  ],
+  "include": [
+    "./server/**/*",
+    "./custom.d.ts",
+    "./server/i18n/locales/en.json"
+  ]
+}

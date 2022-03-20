@@ -1,0 +1,23 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "run-browser": "ng serve client-browser",
+    "run-ssr": "ng serve client-ssr",
+    "build-browser": "ng build --base-href /app/ client-browser --configuration=production --aot",
+    "build-ssr": "ng build --prod --configuration=production --aot && yarn production-ssr",
+    "production-ssr": "node --max_old_space_size=8192 ../node_modules/@angular/cli/bin/ng run client-ssr:server:production && cd .. && yarn copy-stuffs",
+    "dev-ssr": "node --max_old_space_size=8192 ../node_modules/@angular/cli/bin/ng run client-ssr:serve-ssr",
+    "serve:ssr": "node ../dist/server/main.js",
+    "prerender": "ng run client-ssr:prerender"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+  }
+}

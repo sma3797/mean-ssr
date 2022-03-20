@@ -1,0 +1,61 @@
+.main-layout {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  > div {
+    flex: 1;
+  }
+  .main-router {
+    padding-top: 90px;
+  }
+}
+
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgb(36 36 36 / 26%);
+
+  display: none;
+  align-items: flex-start;
+
+  .nav-menu {
+    padding: 2rem;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    .logo {
+      margin-bottom: 15px;
+    }
+  }
+  .close-icon {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    span {
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-router {
+    padding-top: 78px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-router {
+    padding-top: 70px !important;
+  }
+}
