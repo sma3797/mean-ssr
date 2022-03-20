@@ -14,7 +14,7 @@ From CLI (install these on global levels)
 - Download mongoDB and install as a service
 https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.12-signed.msi
 
-# .env FILE SETUP (NOT FOR NOW)
+# .env FILE SETUP
 
 - Create a `.env` file
     APP_URL=http://localhost:4000
