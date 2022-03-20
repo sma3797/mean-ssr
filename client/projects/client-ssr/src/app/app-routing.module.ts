@@ -6,6 +6,22 @@ const routes: Routes = [
   {
     path: "",
     component: MainLayoutComponent,
+    data: {
+      seo: {
+        title: "Home Page | Dynamic Title and Meta Tags Demo",
+        metaTags: [
+          {
+            name: "description",
+            content: "Something descripton",
+          },
+          { property: "og:title", content: "Something Home Page ⚔" },
+          {
+            proprety: "og:description",
+            content: "Something og",
+          },
+        ],
+      },
+    },
   },
 ];
 

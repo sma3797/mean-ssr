@@ -45,6 +45,12 @@ https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.12-signed.msi
 - Port: 4200
 
 # STYLES.SCSS Guide
+- Use default scss as `@import "projects/client-ssr/src/styles.scss;`
+
+# Deployment
+- Make sure you uncommented the AngularServer lines code, which you did on main.ts
+- Run `yarn build-app-production` to make a dist folder
+- Run locally and check the meta tags that we have added on app-routing
 
 ### END LOCAL SETUP
 
